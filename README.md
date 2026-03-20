@@ -22,7 +22,7 @@ The system supports:
 ---
 
 ## 🚀 Tech Stack
-- **Face Embedding & AI**: `DeepFace` (ArcFace / Facenet) and `RetinaFace` for robust detection. These are industry standards for face embedding.
+- **Face Embedding & AI**: `DeepFace` (ArcFace / Facenet) and `RetinaFace` for robust detection for face embedding.
 - **Vector Database**: `FAISS` (Facebook AI Similarity Search) for scalable, lightning-fast 1:N identity resolution.
 - **Backend Service**: `FastAPI` providing high-performance, asynchronous REST APIs.
 - **Frontend UI**: `Streamlit` for a clean, interactive user experience with Webcam/File upload support.
