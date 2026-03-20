@@ -1,6 +1,25 @@
-# Modern Face Recognition & Verification System
+# 🔍 Face Recognition and Verification System
 
-This project is a state-of-the-art Face Recognition system utilizing modern Machine Learning libraries and deployment architectures, suitable for real-world AI/ML engineering roles.
+## 📌 Overview
+
+This project implements a **face recognition and verification system** using computer vision and deep learning techniques. It can detect human faces, extract meaningful features, and compare them to identify or verify individuals.
+
+The system supports:
+
+* **Face Recognition** → Identifying who the person is
+* **Face Verification** → Checking if two faces belong to the same person
+
+---
+
+## 🚀 Features
+
+* 🧠 Face detection from images
+* 🔍 Feature extraction using deep learning
+* 🆔 Face recognition (multi-class identification)
+* ✅ Face verification (one-to-one comparison)
+* 📊 Similarity measurement between faces
+
+---
 
 ## 🚀 Tech Stack
 - **Face Embedding & AI**: `DeepFace` (ArcFace / Facenet) and `RetinaFace` for robust detection. These are industry standards for face embedding.
@@ -44,3 +63,37 @@ This project is a state-of-the-art Face Recognition system utilizing modern Mach
 1. **Register User**: Capture an image of a new user and add their 512-dimensional face embedding to the FAISS database.
 2. **Verify Face (1:1)**: Take an image and a User ID, and assert whether the image belongs to the claimed User ID based on L2 Distance thresholding.
 3. **Recognize Face (1:N)**: Retrieve the most likely identity for a given face across all registered users in milliseconds.
+
+
+## ⚙️ How It Works
+
+1. **Face Detection**
+   Detects faces from input images using computer vision techniques.
+
+2. **Feature Extraction**
+   Converts detected faces into numerical embeddings (feature vectors).
+
+3. **Comparison / Matching**
+
+   * Recognition: Matches input face with a database
+   * Verification: Compares two face embeddings using similarity metrics
+
+---
+
+## 📸 Use Cases
+
+* 🔐 Biometric authentication systems
+* 🏫 Attendance systems
+* 🛂 Security & surveillance
+* 📱 Face unlock applications
+
+---
+
+## 📊 Future Improvements
+
+* Real-time face recognition using webcam
+* Improve accuracy using advanced models (e.g., FaceNet, ArcFace)
+* Deploy as a web application (Flask/Django)
+* Add liveness detection to prevent spoofing
+
+---
