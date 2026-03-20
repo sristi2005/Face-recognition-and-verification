@@ -2,7 +2,7 @@
 
 ## 📌 Overview
 
-This project implements a **face recognition and verification system** using computer vision and deep learning techniques. It can detect human faces, extract meaningful features, and compare them to identify or verify individuals.
+This project implements a **deep learning-based face recognition and verification system** using state-of-the-art models like ArcFace and FaceNet. It leverages high-dimensional face embeddings and FAISS-based similarity search to perform real-time identity recognition and verification.
 
 The system supports:
 
@@ -26,6 +26,14 @@ The system supports:
 - **Vector Database**: `FAISS` (Facebook AI Similarity Search) for scalable, lightning-fast 1:N identity resolution.
 - **Backend Service**: `FastAPI` providing high-performance, asynchronous REST APIs.
 - **Frontend UI**: `Streamlit` for a clean, interactive user experience with Webcam/File upload support.
+
+## 🧠 Architecture
+
+- **Face Detection**: RetinaFace (deep learning-based detector)
+- **Embedding Generation**: DeepFace (ArcFace / FaceNet models)
+- **Similarity Search**: FAISS for efficient nearest neighbor retrieval
+- **Backend**: FastAPI (REST APIs for scalability)
+- **Frontend**: Streamlit (interactive UI)
 
 ## 📂 Project Structure
 - `core/face_engine.py`: Handles model loading and embedding retrieval logic.
@@ -79,6 +87,13 @@ The system supports:
    * Verification: Compares two face embeddings using similarity metrics
 
 ---
+
+## 📊 Key Highlights
+
+- Uses 512-dimensional embeddings for high accuracy
+- Implements 1:N search using FAISS (industry-grade vector DB)
+- Supports both verification (1:1) and recognition (1:N)
+- Designed with scalable backend architecture (FastAPI)
 
 ## 📸 Use Cases
 
