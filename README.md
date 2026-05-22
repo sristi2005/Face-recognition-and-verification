@@ -88,27 +88,3 @@ The system supports:
 
 ---
 
-## 📊 Key Highlights
-
-- Uses 512-dimensional embeddings for high accuracy
-- Implements 1:N search using FAISS (industry-grade vector DB)
-- Supports both verification (1:1) and recognition (1:N)
-- Designed with scalable backend architecture (FastAPI)
-
-## 📸 Use Cases
-
-* 🔐 Biometric authentication systems
-* 🏫 Attendance systems
-* 🛂 Security & surveillance
-* 📱 Face unlock applications
-
----
-
-## 📊 Future Improvements
-
-* Real-time face recognition using webcam
-* Improve accuracy using advanced models (e.g., FaceNet, ArcFace)
-* Deploy as a web application (Flask/Django)
-* Add liveness detection to prevent spoofing
-
----
